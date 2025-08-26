@@ -2,6 +2,8 @@ import "./editorsChoice.css"
 import ArticleCard from "../articleCard/articleCard";
 
 const EditorsChoice = () => {
+    const articles = [{ title: '' }]
+
     return (
         <div className="editorsChoiceWrapper">
             <div className="blackBackground"></div>
@@ -14,6 +16,7 @@ const EditorsChoice = () => {
             </div>
 
             <div className="bottomSection">
+                {articles.map((article) => <ArticleCard title={article.title} />)}
                 <ArticleCard
                     title={"Намар нээлтээ хийх бүтээлүүдээс онцлох 10 кино"}
                     viewCount={6122}
