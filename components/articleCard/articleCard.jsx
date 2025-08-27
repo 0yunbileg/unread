@@ -10,10 +10,7 @@ const ArticleCard = ({
     readTime
 }) => {
     return (
-        <div className="card">
-            <div className="cardImgDiv">
-                <Image className="cardImg" src={image} alt="cardImg" width={350} height={350} />
-            </div>
+        <div className="card" style={{ backgroundImage: `url(${image})` }}>
             <div className="cardContentWrapper">
                 <div className="cardTopSection">
                     <div className="cardProgressBar"></div>

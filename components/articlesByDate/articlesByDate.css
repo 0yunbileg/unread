@@ -1,6 +1,9 @@
 .articlesByDateWrapper {
     margin: 80px auto;
     width: 85%;
+    max-width: 1200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .dateControlWrapper {

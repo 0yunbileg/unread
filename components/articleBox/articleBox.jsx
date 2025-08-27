@@ -8,11 +8,7 @@ const ArticleBox = ({
     readTime
 }) => {
     return (
-        <div className="box">
-            <div className="boxImgDiv">
-                <Image className="boxImg" src={image} alt="boxImg" width={500} height={500} />
-            </div>
-
+        <div className="box" style={{ backgroundImage: `url(${image})` }}>
             <div className="boxContentWrapper">
                 <div className="boxReadTime">{readTime}</div>
                 <div className="boxCategory">{category}</div>

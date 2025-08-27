@@ -3,21 +3,17 @@ import Image from "next/image"
 
 const Hero = () => {
     return (
-        <div className="heroDiv">
-            <div className="heroBackgroundDiv">
-                <Image className="heroBackgroundImg" src="/images/heroBackground.jpg" alt="Hero background" width={1920} height={1200} />
-            </div>
+        <div className="heroDiv" style={{ backgroundImage: `url(/images/heroBackground.jpg)` }}>
 
             <div className="heroOverlay" />
 
             <div className="heroContentWrapper">
-                <div className="heroImgWrapper">
-                    <Image src={"/images/hero.jpg"} alt="hero image" width={1920} height={1080} className="heroImg" />
+                <div className="heroImgWrapper" style={{ backgroundImage: `url(/images/hero.jpg)` }}>
                 </div>
                 <div className="heroTextWrapper">
-                    <p>Шинэ</p>
-                    <p>Чөлөөт</p>
-                    <p>“БОНЗ-ын үнэлгээний цахим платформын нээлтийн арга хэмжээ”-г тоймлох нь</p>
+                    <p className="heroNew">Шинэ</p>
+                    <p className="heroCategory">Чөлөөт</p>
+                    <p className="heroTitle">{"“БОНЗ-ын үнэлгээний цахим платформын нээлтийн арга хэмжээ”-г тоймлох нь".toUpperCase()}</p>
                 </div>
             </div>
         </div>
